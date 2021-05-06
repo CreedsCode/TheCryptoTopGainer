@@ -1,5 +1,6 @@
 import React, {FC} from "react";
 import styled from "styled-components";
+import {ValueText} from "./ValueText";
 
 const Inner = styled.div`
     width: 100%;
@@ -24,14 +25,6 @@ const NameText = styled.div`
     margin: 20px;
 `;
 
-const ValueText = styled.div`
-    font-size: 2rem;
-    margin: 20px;
-    margin-left: 0px;
-    font-weight:bold;
-    color:#16c784;
-`;
-
 const At = styled.div`
 font-size: 2rem;
     margin: 20px;
@@ -44,7 +37,9 @@ export const Card: FC = () => (
         <Base>
             <NameText>Bitcoin Cash</NameText>
             <At>With</At>
-            <ValueText>54,5%</ValueText>
+            <ValueText value={187}/>
         </Base>
     </Inner>
 )
+
+
